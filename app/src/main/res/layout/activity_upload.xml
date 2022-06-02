@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".upload.UploadActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/tv_img"
+                android:textSize="15sp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@+id/tv_photo"
+                app:layout_constraintTop_toBottomOf="@+id/tv_photo"
+                android:text="@string/camera"
+                android:textSize="20sp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@id/iv_photo"
+                app:layout_constraintTop_toBottomOf="@+id/tv_photo"
+                android:text="@string/gallery"
+                android:textSize="20sp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_camerax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toEndOf="@+id/bt_camera"
+                app:layout_constraintEnd_toStartOf="@id/bt_gallery"
+                app:layout_constraintTop_toBottomOf="@+id/tv_photo"
+                android:text="@string/camerax"
+                android:textSize="20sp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintHeight_min="300dp"
+                app:layout_constraintHeight_max="450dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/bt_camera"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:src="@drawable/ic_baseline_image_24"
+                android:scaleType="centerCrop"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/iv_photo"
+                app:layout_constraintStart_toStartOf="@id/iv_photo"
+                android:text="@string/description"
+                android:textSize="15sp"
+                />
+
+            <com.zaniva.storyappv2.customview.ETDesc
+                android:id="@+id/et_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:autofillHints="Deskripsi"
+                android:textSize="15sp"
+                android:background="@drawable/border"
+                android:hint="@string/desc_desc"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:maxLines="3"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+                app:layout_constraintEnd_toEndOf="@id/iv_photo"
+                app:layout_constraintStart_toStartOf="@id/tv_desc"
+                app:layout_constraintTop_toBottomOf="@+id/tv_desc"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_upload"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/et_desc"
+                app:layout_constraintStart_toStartOf="@id/iv_photo"
+                app:layout_constraintEnd_toEndOf="@id/iv_photo"
+                android:layout_marginTop="10dp"
+                android:text="@string/bt_upload"
+                android:textSize="15sp"
+                />
+
+
+
+
+            <ProgressBar
+                android:id="@+id/pb_home"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

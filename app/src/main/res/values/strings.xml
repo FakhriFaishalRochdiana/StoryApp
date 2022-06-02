@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">StoryAppV2</string>
+    <string name="til_email">E-mail</string>
+    <string name="til_pass">Password</string>
+    <string name="bt_sign_in">Sign In</string>
+    <string name="bt_register">Register</string>
+    <string name="til_name">Name</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Map Stories</string>
+    <string name="title_notifications">Profile</string>
+    <string name="un">User Name</string>
+    <string name="content">Content Description</string>
+    <string name="test_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo ultricies bibendum. Etiam pellentesque feugiat sem feugiat euismod. Quisque sed tempus justo, eget placerat eros. Morbi luctus fermentum risus. Suspendisse at rhoncus justo. Maecenas eget dolor accumsan felis tristique gravida non sed lorem. Ut ipsum lectus, bibendum eget imperdiet nec, aliquam eget ante. Fusce non quam tortor. Nulla tincidunt erat eros, vitae feugiat elit porttitor a. Nam quam odio, dictum sed laoreet vel, faucibus vel sem. Vivamus pretium facilisis metus, nec dictum odio ornare sed. Vestibulum euismod ornare nunc, at porta odio hendrerit sit amet. Etiam accumsan blandit sollicitudin. Suspendisse non massa et orci pretium venenatis. Nunc vel ullamcorper eros, vel euismod augue. Curabitur vehicula justo justo, et congue diam commodo id.</string>
+    <string name="date">20 Mei 2022</string>
+    <string name="log_out">Log Out</string>
+    <string name="add_stories">Add Stories</string>
+    <string name="tv_img">Let\'s Start with a Picture, shall we?</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="description">Care to share your mind?</string>
+    <string name="desc_desc">Sorry, it\'s actually mandatory</string>
+    <string name="bt_upload">Upload your Stories!</string>
+    <string name="camerax">CameraX</string>
+    <string name="delay">2000</string>
+    <string name="pass_req">Password is less than 6 characters</string>
+    <string name="email_req">Invalid Email Format</string>
+    <string name="up_desc">Just a little bit is fine</string>
+</resources>
